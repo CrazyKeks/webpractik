@@ -1,0 +1,76 @@
+.navigation
+  margin-left: 113px
+
+  @media screen and (max-width: 834px)
+    position: fixed
+    width: 320px
+    height: 100%
+    background: #313945
+    top: 0
+    right: -320px
+    display: none
+    padding: 120px 60px 40px
+    flex-direction: column
+    z-index: 2
+
+  &__list
+    display: flex
+    flex-direction: row
+    margin: 0 -30px
+
+    @media screen and (max-width: 834px)
+      margin: 0
+      flex-direction: column
+
+  &__item
+    margin: 0 30px
+
+    @media screen and (max-width: 834px)
+      border-bottom: 1px solid #1d2228
+
+  &__link
+    font-size: 18px
+    font-weight: 900
+    font-family: "Alegreya",sans-serif
+    transition: 0.2s ease-in-out
+    color: #000
+
+    &:hover
+      color: #e52d2d
+
+    @media screen and (max-width: 834px)
+      color: #fff
+      padding: 24px 0
+      display: block
+      text-align: center
+
+.aboutBlockMobile
+  display: none
+  flex-direction: column
+  margin-top: auto
+  align-items: center
+
+  @media screen and (max-width: 834px)
+    display: flex
+
+  &__title
+    color: #a8b0bc
+    letter-spacing: 1px
+    font-family: 'Roboto', sans-serif
+    font-size: 12px
+    line-height: 1.5
+    text-align: center
+
+  &__phone
+    font-size: 24px
+    font-weight: 900
+    font-family: "Alegreya", sans-serif
+    letter-spacing: 1.33px
+    color: #ffffff
+    line-height: normal
+
+  &__timeInfo
+    font-size: 12px
+    line-height: 1.5
+    color: #a8b0bc
+    font-family: 'Roboto', sans-serif

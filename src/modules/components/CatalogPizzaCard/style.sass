@@ -1,0 +1,163 @@
+.catalogPizzaCard
+  display: inline-flex
+  flex-wrap: wrap
+  margin: 0 -16px
+
+  &__item
+    border-radius: 5px
+    box-shadow: 0 2px 5px 0 rgba(165, 169, 176, 0.3)
+    padding: 20px 30px 40px
+    max-width: 304px
+    width: 100%
+    margin: 16px 16px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__wrapImg
+    margin-bottom: 20px
+    width: 240px
+    height: 240px
+    position: relative
+
+  &__borderBigPizza
+    width: 200px
+    height: 200px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23DCDFE2FF' stroke-width='1' stroke-dasharray='10%2c5' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e")
+
+  &__borderMiddlePizza
+    width: 170px
+    height: 170px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23DCDFE2FF' stroke-width='1' stroke-dasharray='10%2c5' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e")
+
+  &__img
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 100%
+    height: auto
+    border-radius: 50%
+    overflow: hidden
+    display: none
+
+    &.small
+      transform: translate(-50%, -50%) scale(0.584)
+      animation: resizeSmallPizza 0.3s ease-in-out
+
+    &.middle
+      transform: translate(-50%, -50%) scale(0.771)
+      animation: resizeMiddlePizza 0.3s ease-in-out
+
+    &.big
+      transform: translate(-50%, -50%) scale(1)
+      animation: resizeBigPizza 0.3s ease-in-out
+
+  &__title
+    margin-bottom: 6px
+
+  &__recept
+    text-align: center
+    margin-bottom: 8px
+
+  &__titleSize
+    text-align: center
+    color: #000
+    font-family: 'Roboto', sans-serif
+    font-size: 12px
+    line-height: 18px
+    margin-bottom: 4px
+
+  &__sizeList
+    display: inline-flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    background: #eff0f1
+    border-radius: 4px
+    padding: 2px
+    height: 32px
+    margin-bottom: 12px
+
+  &__sizeItem
+    margin-right: 2px
+
+    &:last-child
+      margin-right: 0
+
+  &__sizeBtn
+    width: 58px
+    height: 100%
+    background: transparent
+    transition: 0.2s ease-in-out
+    border-radius: 4px
+    font-size: 12px
+    line-height: normal
+    color: #82909f
+    outline: transparent
+    display: inline-block
+    font-family: 'Roboto', sans-serif
+    font-weight: 600
+    cursor: pointer
+
+    &.active
+      background: #fff
+      color: #000
+
+  &__price
+    font-family: 'Roboto', sans-serif
+    font-size: 24px
+    line-height: 30px
+    margin-bottom: 12px
+    font-weight: 600
+
+  &__buy
+    width: 100%
+    text-align: center
+    padding: 14px 0
+    color: #fff
+    font-size: 18px
+    font-weight: 900
+    outline: none
+    font-family: 'Alegreya', sans-serif
+    letter-spacing: 1px
+    text-transform: uppercase
+    cursor: pointer
+    position: relative
+    z-index: 0
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      background: #e52d2d
+      width: 100%
+      height: 100%
+      border-radius: 5px
+      z-index: -1
+
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      background: #e52d2d
+      width: 100%
+      height: 0
+      border-radius: 5px
+      z-index: -1
+      transform: translateY(-50%)
+      transition: 0.3s ease-in-out
+
+    &:hover:after
+      height: 100%
+      background-color: #ff3c3c
+

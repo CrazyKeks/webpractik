@@ -1,0 +1,38 @@
+.header
+  margin-top: 52px
+  position: sticky
+  left: 0
+  top: -1px
+  background: #fff
+  z-index: 10
+  margin-bottom: 40px
+
+  @media screen and (max-width: 834px)
+    margin-top: 32px
+
+  &.isSticky
+    padding: 15px 0 14px
+
+    .phoneHeader__phone,
+    .basket__text
+      font-size: 18px
+
+    .phoneHeader__phone
+      letter-spacing: 1.29px
+
+    .basket__text
+      letter-spacing: 1px
+
+    .phoneHeader__wrapIcon, .basket__wrapIcon
+      width: 32px
+      height: 32px
+
+    .logoHeader
+      max-width: 69px
+
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    align-items: center

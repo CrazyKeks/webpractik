@@ -1,0 +1,39 @@
+.specialList
+  display: flex
+  flex-direction: row
+  margin: 0 -16px
+
+  &__item
+    max-width: calc((100% / 3) - 16px)
+    width: 100%
+    margin: 0 16px
+
+  &__wrapImg
+    position: relative
+    margin-bottom: 12px
+    height: 0
+    padding-top: 59.5%
+    overflow: hidden
+
+  &__img
+    width: 100%
+    height: auto
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+  &__title
+    font-family: "Alegreya", sans-serif
+    font-weight: 800
+    line-height: 1.25
+    color: #000
+    font-size: 24px
+    margin-bottom: 14px
+
+  &__about
+    font-family: 'Roboto', sans-serif
+    font-size: 14px
+    font-weight: normal
+    line-height: 1.5
+    color: #000

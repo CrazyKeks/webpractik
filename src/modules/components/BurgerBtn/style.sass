@@ -1,0 +1,40 @@
+.burger
+  width:  34px
+  height: 29px
+  padding: 5px
+  cursor: pointer
+  box-sizing: border-box
+  position: relative
+  background: transparent
+  margin-left: 35px
+  outline: transparent
+  display: none
+
+  @media screen and (max-width: 834px)
+    display: block
+
+  &__icon
+    width: 100%
+    display: block
+    position: relative
+    height: 100%
+
+  &__line
+    position: absolute
+    left: 0
+    top: 0%
+    height: 3px
+    display: block
+    background: #000
+    border-radius: 1.5px
+    width: 24px
+
+    &:nth-of-type(2)
+      top: 50%
+      transform: translateY(-50%)
+      height: 3px
+
+    &:nth-of-type(3)
+      top: auto
+      bottom: 0
+      width: 19px

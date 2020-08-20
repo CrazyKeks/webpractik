@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="49px" viewBox="0 0 48 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>38A81A01-53CA-43BF-AC29-9501908E1FDA</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Test-Tablet" transform="translate(-595.000000, -3288.000000)">
+            <g id="Group-31" transform="translate(0.000000, 3140.000000)">
+                <g id="Group-29" transform="translate(567.000000, 120.000000)">
+                    <g id="icon-pay" transform="translate(29.000000, 29.000000)">
+                        <g id="Group-57" transform="translate(0.454545, 0.454545)">
+                            <circle id="Oval" fill="#000000" cx="6.54545455" cy="26.9090909" r="1.45454545"></circle>
+                            <circle id="Oval-Copy-6" fill="#000000" cx="13.0909091" cy="26.9090909" r="1.45454545"></circle>
+                            <circle id="Oval-Copy-7" fill="#000000" cx="19.6363636" cy="26.9090909" r="1.45454545"></circle>
+                            <circle id="Oval-Copy-10" fill="#000000" cx="6.54545455" cy="32.7272727" r="1.45454545"></circle>
+                            <circle id="Oval-Copy-9" fill="#000000" cx="13.0909091" cy="32.7272727" r="1.45454545"></circle>
+                            <circle id="Oval-Copy-8" fill="#000000" cx="19.6363636" cy="32.7272727" r="1.45454545"></circle>
+                            <circle id="Oval-Copy-13" fill="#000000" cx="6.54545455" cy="38.5454545" r="1.45454545"></circle>
+                            <circle id="Oval-Copy-12" fill="#000000" cx="13.0909091" cy="38.5454545" r="1.45454545"></circle>
+                            <circle id="Oval-Copy-11" fill="#000000" cx="19.6363636" cy="38.5454545" r="1.45454545"></circle>
+                            <path d="M18.9090909,5.81818182 L23.2727273,5.81818182 C24.8793738,5.81818182 26.1818182,7.12062618 26.1818182,8.72727273 L26.1818182,42.9090909 C26.1818182,44.5157375 24.8793738,45.8181818 23.2727273,45.8181818 L2.90909091,45.8181818 C1.30244436,45.8181818 0,44.5157375 0,42.9090909 L0,8.72727273 C0,7.12062618 1.30244436,5.81818182 2.90909091,5.81818182 L7.27272727,5.81818182 L7.27272727,5.81818182" id="Path" stroke="#000000" stroke-width="1.45454545"></path>
+                            <path d="M26.1818182,9.45454545 L27.6363636,9.45454545 C28.4396869,9.45454545 29.0909091,10.1057676 29.0909091,10.9090909 L29.0909091,31.2727273 C29.0909091,32.0760505 28.4396869,32.7272727 27.6363636,32.7272727 L26.1818182,32.7272727 L26.1818182,32.7272727 L26.1818182,9.45454545 Z" id="Rectangle-Copy-40" stroke="#000000" stroke-width="1.45454545"></path>
+                            <path d="M29.0909091,11.6363636 L42.9090909,11.6363636 C44.1140758,11.6363636 45.0909091,12.6131969 45.0909091,13.8181818 L45.0909091,28.3636364 C45.0909091,29.5686213 44.1140758,30.5454545 42.9090909,30.5454545 L29.0909091,30.5454545 L29.0909091,30.5454545 L29.0909091,11.6363636 Z" id="Rectangle-Copy-41" stroke="#000000" stroke-width="1.45454545"></path>
+                            <rect id="Rectangle-Copy-42" stroke="#000000" stroke-width="1.45454545" x="29.0909091" y="15.2727273" width="16" height="4.36363636"></rect>
+                            <rect id="Rectangle-Copy-39" stroke="#E52D2D" stroke-width="1.45454545" stroke-linejoin="round" x="7.27272727" y="0" width="11.6363636" height="8.72727273"></rect>
+                            <line x1="21.0909091" y1="8.72727273" x2="5.09090909" y2="8.72727273" id="Path" stroke="#000000" stroke-width="1.45454545" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <rect id="Rectangle-Copy-38" stroke="#000000" stroke-width="1.45454545" x="3.63636364" y="12.3636364" width="18.9090909" height="8" rx="0.727272727"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

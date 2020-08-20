@@ -1,0 +1,54 @@
+.basket
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  margin-left: 60px
+  align-items: center
+
+  @media screen and (max-width: 834px)
+    margin-left: 32px
+
+  &__wrapIcon
+    width: 40px
+    height: 40px
+    margin-right: 12px
+    position: relative
+    flex-shrink: 0
+    transition: 0.2s ease-in-out
+
+    @media screen and (max-width: 834px)
+      margin-right: 0
+
+  &__icon
+    width: 100%
+    height: auto
+
+  &__wrapText
+    display: flex
+    flex-direction: column
+
+    @media screen and (max-width: 834px)
+      display: none
+
+  &__text
+    font-size: 24px
+    font-weight: 900
+    font-family: "Alegreya",sans-serif
+    letter-spacing: 1.33px
+    line-height: normal
+    transition: 0.2s ease-in-out
+
+  &__countIcon
+    position: absolute
+    right: -10px
+    top: -10px
+    border-radius: 50%
+    background: #e52d2d
+    width: 20px
+    height: 20px
+    text-align: center
+    line-height: 21px
+    color: #fff
+    font-family: 'Roboto',sans-serif
+    font-size: 11px
+    font-weight: 500
