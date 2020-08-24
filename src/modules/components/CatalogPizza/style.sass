@@ -2,7 +2,17 @@
   display: flex
   justify-content: center
   flex-direction: column
+  padding-bottom: 100px
+
+  @media screen and (max-width: 1332px)
+    padding-bottom: 80px
+
+  @media screen and (max-width: 768px)
+    padding-bottom: 60px
 
   &__title
     margin-bottom: 55px
     display: block
+
+    @media screen and (max-width: 1332px)
+      margin-bottom: 20px

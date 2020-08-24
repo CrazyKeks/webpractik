@@ -9,6 +9,7 @@ import BurgerBtn from "../BurgerBtn";
 
 const Header = () => {
     const [isSticky, setIsSticky] = useState(false)
+    const [openMobileMenu, updateMobileMenu] = useState(false)
     const ref = React.createRef()
 
     useEffect(()=>{
@@ -26,16 +27,21 @@ const Header = () => {
         }
     }, [])
 
+    const clickBurgerMenu = () => {
+        const updateStatusMenu = openMobileMenu ? false : true;
+        updateMobileMenu(updateStatusMenu)
+    }
+
     return(
         <header className={'header' + (isSticky ? " isSticky" : "")} ref={ref}>
             <div className="container">
                 <div className="header__wrap">
                     <LogoHeader/>
-                    <Navigation/>
+                    <Navigation statusMobileMenu={openMobileMenu} />
                     <PhoneHeader/>
                     <Basket/>
                     <LanguageSite/>
-                    <BurgerBtn/>
+                    <BurgerBtn click={clickBurgerMenu} statusBurgerMenu={openMobileMenu}/>
                 </div>
             </div>
         </header>

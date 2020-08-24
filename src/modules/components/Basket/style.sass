@@ -4,9 +4,13 @@
   flex-wrap: nowrap
   margin-left: 60px
   align-items: center
+  cursor: pointer
 
-  @media screen and (max-width: 834px)
+  @media screen and (max-width: 1332px)
     margin-left: 32px
+
+  @media screen and (max-width: 1332px)
+    margin-left: 24px
 
   &__wrapIcon
     width: 40px
@@ -16,8 +20,13 @@
     flex-shrink: 0
     transition: 0.2s ease-in-out
 
-    @media screen and (max-width: 834px)
+    @media screen and (max-width: 1332px)
       margin-right: 0
+
+    @media screen and (max-width: 768px)
+      width: 32px
+      height: 32px
+
 
   &__icon
     width: 100%
@@ -27,7 +36,7 @@
     display: flex
     flex-direction: column
 
-    @media screen and (max-width: 834px)
+    @media screen and (max-width: 1332px)
       display: none
 
   &__text

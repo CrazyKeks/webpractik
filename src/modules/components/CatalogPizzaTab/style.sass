@@ -4,8 +4,23 @@
   margin: 0 0 40px
   justify-content: center
 
+  @media screen and (max-width: 768px)
+    margin: 0 0 30px
+
   &__item
     margin: 0 20px
+    position: relative
+
+    &:hover
+      .catalogPizzaTabs__icon
+        top: -9px
+        opacity: 1
+
+    @media screen and (max-width: 768px)
+      &:hover
+        .catalogPizzaTabs__icon
+          top: 0
+          opacity: 1
 
   &__btn
     font-family: 'Alegreya', sans-serif
@@ -17,6 +32,41 @@
     cursor: pointer
     background: transparent
     outline: transparent
+    position: relative
+    z-index: 2
+
+    @media screen and (max-width: 768px)
+      display: none
 
     &.active
       color: #e52d2d
+
+  &__icon
+    position: absolute
+    width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    background: none
+    padding: 0
+    outline: transparent
+    opacity: 0
+    transition: 0.3s ease-in-out
+
+    &.active
+      svg path
+        fill: #e52d2d
+
+    @media screen and (max-width: 768px)
+      opacity: 1
+      position: relative
+      left: 0
+      top: 0
+      transform: none
+      margin: 0 auto
+
+

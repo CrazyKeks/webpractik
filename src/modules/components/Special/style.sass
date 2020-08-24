@@ -1,12 +1,21 @@
 .specialList
   display: flex
   flex-direction: row
-  margin: 0 -16px
+  margin: 0 -16px 112px
+
+  @media screen and (max-width: 768px)
+    margin: 0 -15px 60px
+    display: block
 
   &__item
     max-width: calc((100% / 3) - 16px)
     width: 100%
     margin: 0 16px
+
+    @media screen and (max-width: 768px)
+      max-width: 100%
+      margin: 0
+      padding: 0 15px
 
   &__wrapImg
     position: relative
@@ -14,6 +23,7 @@
     height: 0
     padding-top: 59.5%
     overflow: hidden
+    border-radius: 5px
 
   &__img
     width: 100%
@@ -37,3 +47,25 @@
     font-weight: normal
     line-height: 1.5
     color: #000
+
+  .slick-dots
+    bottom: -20px
+
+  .slick-dots li
+    display: inline-flex
+    justify-content: center
+    align-items: center
+
+    &.slick-active
+      & button
+        background: #e52d2d
+
+  .slick-dots li button
+    padding: 0
+    width: 12px
+    height: 12px
+    background: #dfe3eb
+    border-radius: 50%
+
+    &:before
+      content: none

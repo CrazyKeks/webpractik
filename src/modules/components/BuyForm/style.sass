@@ -1,0 +1,201 @@
+.buyForm
+  @media screen and (max-width: 768px)
+    margin-top: 10px
+  &__title
+    text-align: left
+    display: block
+    font-size: 18px
+    font-weight: 800
+    font-family: "Alegreya", sans-serif
+    margin-bottom: 12px
+
+  &__wrap
+    margin-bottom: 24px
+
+    &.twoColumn
+      display: flex
+      flex-direction: row
+
+      @media screen and (max-width: 768px)
+        flex-direction: column
+
+      & .buyForm__wrapInput:nth-of-type(1)
+          margin-right: 32px
+
+          @media screen and (max-width: 768px)
+            margin-right: 0 
+            margin-bottom: 24px
+
+  &__wrapInput
+    position: relative
+    width: 100%
+
+    &.complete
+      label
+        top: 0
+        left: 9px
+        transform: translateY(-50%)
+        background: #fff
+        padding: 0 4px
+        font-size: 13px
+        z-index: 2
+        color: #c4c7ca
+
+    &.error
+      input
+        border-color: #fb7a7a
+      label
+        top: 0
+        left: 9px
+        transform: translateY(-50%)
+        background: #fff
+        padding: 0 4px
+        font-size: 13px
+        z-index: 2
+        color: #fb7a7a !important
+
+
+  &__input
+    border: 1px solid #c4c7ca
+    border-radius: 4px
+    background: transparent
+    padding: 13px 12px
+    font-family: 'Roboto', sans-serif
+    font-size: 16px
+    color: #000
+    transition: 0.3s ease-in-out
+    width: 100%
+
+    &:hover
+      border-color: #000
+
+    &:focus
+      border-color: #3f8fe5
+
+      &+label
+        top: 0
+        left: 9px
+        transform: translateY(-50%)
+        background: #fff
+        padding: 0 4px
+        color: #3f8fe5
+        font-size: 13px
+        z-index: 2
+
+  &__label
+    position: absolute
+    left: 13px
+    top: 15px
+    font-family: 'Roboto', sans-serif
+    font-size: 16px
+    color: #a6a6a6
+    width: auto
+    height: auto
+    z-index: -1
+    padding: 0
+    transition: 0.3s ease-in-out
+    background: transparent
+
+  &__radio
+    display: none
+    width: 100%
+
+  &__wrapRadio
+    position: relative
+    margin-bottom: 18px
+
+  &__radioLabel
+    position: relative
+    font-family: 'Roboto', sans-serif
+    font-size: 16px
+    line-height: 1.13
+    padding-left: 28px
+    cursor: pointer
+
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: -2px
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      border: 1px solid #c4c7ca
+      transition: 0.3s ease-in-out
+
+    &:before
+      content: ''
+      position: absolute
+      left: 6px
+      top: 4px
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: #000
+      opacity: 0
+
+    &:hover:after
+      border-color: #000
+
+  &__radio:checked + label
+    &:before
+      opacity: 1
+    &:after
+      border-color: #000
+
+  &__btnBuy
+    max-width: 240px
+    width: 100%
+    padding: 14px 0
+    font-family: "Alegreya", sans-serif
+    text-transform: uppercase
+    color: #fff
+    border: none
+    background: transparent
+    outline: transparent
+    position: relative
+    font-size: 18px
+    font-weight: 900
+    letter-spacing: 1px
+    display: inline-block
+    margin-bottom: 23px
+    cursor: pointer
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: #e52d2d
+      border-radius: 5px
+      z-index: -1
+
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+      height: 0
+      background: #ff3c3c
+      border-radius: 5px
+      z-index: -1
+      transition: 0.3s ease-in-out
+
+    &:hover:after
+      height: 100%
+
+  &__info
+    color: #848a9a
+
+.error-text
+  color: #fb7a7a
+  font-family: 'Roboto', sans-serif
+  font-size: 13px
+  line-height: 18px
+  display: block
+  margin-top: 4px
+  margin-bottom: 4px

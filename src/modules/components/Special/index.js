@@ -1,5 +1,6 @@
 import React from "react";
 import './style.sass';
+import Slider from "react-slick";
 
 const Speacial = () => {
 
@@ -20,22 +21,51 @@ const Speacial = () => {
             image: '/assets/images/event-3.jpg'
         }
     ]
+    const settings = {
+        dots: true,
+        infinite: false,
+    };
+    const checkSizeWindow = () => {
+        const size = window.innerWidth;
+        if (size <= 769) {
+            return (
+                <Slider {...settings} className="specialList">
+                    {
+                        events.map(event=>(
+                            <li className="specialList__item" key={event.title}>
+                                <div className="specialList__wrapImg">
+                                    <img src={process.env.PUBLIC_URL + event.image} alt="" className="specialList__img"/>
+                                </div>
+                                <p className="specialList__title">{event.title}</p>
+                                <p className="specialList__about">{event.about}</p>
+                            </li>
+                        ))
+                    }
+                </Slider>
+            )
+        } else {
+            return (
+                <ul className="specialList">
+                    {
+                        events.map(event=>(
+                            <li className="specialList__item" key={event.title}>
+                                <div className="specialList__wrapImg">
+                                    <img src={process.env.PUBLIC_URL + event.image} alt="" className="specialList__img"/>
+                                </div>
+                                <p className="specialList__title">{event.title}</p>
+                                <p className="specialList__about">{event.about}</p>
+                            </li>
+                        ))
+                    }
+                </ul>
+            )
+        }
+
+    }
 
     return(
         <div className="container">
-            <ul className="specialList">
-                {
-                    events.map(event=>(
-                        <li className="specialList__item" key={event.title}>
-                            <div className="specialList__wrapImg">
-                                <img src={process.env.PUBLIC_URL + event.image} alt="" className="specialList__img"/>
-                            </div>
-                            <p className="specialList__title">{event.title}</p>
-                            <p className="specialList__about">{event.about}</p>
-                        </li>
-                    ))
-                }
-            </ul>
+            {checkSizeWindow()}
         </div>
     )
 }
